@@ -19,13 +19,18 @@ namespace Fuvar
             }
 
             Console.WriteLine($"3.feladat : {EzANeveAlistanak.Count} Fuvar került feljegyzésre ");
+            int Fuvar = 0;
+            double viteldíj = 0;
+           
             foreach (var i in EzANeveAlistanak)
             {
-                if (true)
+                if (i.TaxiId == 6185)
                 {
-
+                    viteldíj += i.borravalo;
+                    Fuvar++;
                 }
             }
+            Console.WriteLine($"6185 ID-s taxisnak ennyi fuvarja volt : {Fuvar} és ennyi bevétele {viteldíj} ");
             
             
         }
