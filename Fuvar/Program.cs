@@ -66,6 +66,13 @@ namespace Fuvar
             Console.WriteLine($"\tingyenes: {free} fuvar");
             Console.WriteLine($"\tismeretlen: {idk} fuvar");
 
+            double k = 0;
+            foreach (var i in EzANeveAlistanak)
+            {
+                k += i.megtávolság * 1.6;
+            }
+            Console.WriteLine("6.feladat : {0:0.00}km",k);
+
         }
     }
 }
