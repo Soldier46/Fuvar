@@ -19,20 +19,53 @@ namespace Fuvar
             }
 
             Console.WriteLine($"3.feladat : {EzANeveAlistanak.Count} Fuvar került feljegyzésre ");
-            int Fuvar = 0;
-            double viteldíj = 0;
+            double dij = 0;
+            int fuvar = 0;
+            
            
             foreach (var i in EzANeveAlistanak)
             {
                 if (i.TaxiId == 6185)
                 {
-                    viteldíj += i.borravalo;
-                    Fuvar++;
+                    dij += i.borravalo;
+                    fuvar++;
                 }
             }
-            Console.WriteLine($"6185 ID-s taxisnak ennyi fuvarja volt : {Fuvar} és ennyi bevétele {viteldíj} ");
-            
-            
+            Console.WriteLine($"6185 ID-s taxisnak ennyi fuvarja volt : {fuvar} és ennyi bevétele {dij} ");
+
+            int bank = 0;
+            int kp = 0;
+            int free = 0;
+            int idk = 0;
+            foreach (var i in EzANeveAlistanak)
+            {
+                if (i.fizetesmodja == "bankkártya")
+                {
+                    bank++;
+                    
+                }
+
+                else if (i.fizetesmodja == "készpénz")
+                {
+                    kp++;
+                }
+                else if (i.fizetesmodja == "ingyen")
+                {
+                    free++;
+                }
+                else if (i.fizetesmodja == "ismeretlen")
+                {
+                    idk++;
+                }
+               
+               
+            }
+            Console.WriteLine($"5.feladat:");
+            Console.WriteLine($"\tbankártya: {bank} fuvar");
+            Console.WriteLine($"\tkészpénz: {kp} fuvar");
+            Console.WriteLine($"\tingyenes: {free} fuvar");
+            Console.WriteLine($"\tismeretlen: {idk} fuvar");
+
         }
     }
 }
