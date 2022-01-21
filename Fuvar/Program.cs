@@ -73,6 +73,21 @@ namespace Fuvar
             }
             Console.WriteLine("6.feladat : {0:0.00}km",k);
 
+            Class1 vmax = EzANeveAlistanak[0];
+
+            foreach (var i in EzANeveAlistanak)
+            {
+                if (i.utazasidotar > vmax.utazasidotar)
+                {
+                    vmax = i;
+                }  
+            }
+            Console.WriteLine("7.feladat: leghosszabb fuvar:");
+            Console.WriteLine($"\tFuvar hossza: {vmax.utazasidotar} másodperc");
+            Console.WriteLine($"\tTaxiazonosító: {vmax.TaxiId} ");
+            Console.WriteLine($"\tMegtett távolság: {vmax.megtávolság} km");
+            Console.WriteLine($"\tFuvardíj$: {vmax.viteldíj}$");
+           
         }
     }
 }
