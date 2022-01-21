@@ -17,8 +17,15 @@ namespace Fuvar
             {
                 EzANeveAlistanak.Add(new Class1(b));
             }
-            
 
+            Console.WriteLine($"3.feladat : {EzANeveAlistanak.Count} Fuvar került feljegyzésre ");
+            foreach (var i in EzANeveAlistanak)
+            {
+                if (true)
+                {
+
+                }
+            }
             
             
         }
