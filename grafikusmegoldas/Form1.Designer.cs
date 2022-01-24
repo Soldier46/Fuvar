@@ -30,22 +30,22 @@ namespace grafikusmegoldas
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTaxiID = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnLoad = new System.Windows.Forms.Button();
+            this.btnSort = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtIndulas = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtTávolság = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtViteldíj = new System.Windows.Forms.TextBox();
+            this.txtBorravaló = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtFizetésmódja = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtIdőtartam = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -59,12 +59,12 @@ namespace grafikusmegoldas
             this.label1.TabIndex = 1;
             this.label1.Text = "Fuvar Adatai:";
             // 
-            // textBox1
+            // txtTaxiID
             // 
-            this.textBox1.Location = new System.Drawing.Point(281, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 2;
+            this.txtTaxiID.Location = new System.Drawing.Point(281, 113);
+            this.txtTaxiID.Name = "txtTaxiID";
+            this.txtTaxiID.Size = new System.Drawing.Size(100, 23);
+            this.txtTaxiID.TabIndex = 2;
             // 
             // listBox1
             // 
@@ -75,23 +75,23 @@ namespace grafikusmegoldas
             this.listBox1.Size = new System.Drawing.Size(163, 334);
             this.listBox1.TabIndex = 3;
             // 
-            // button1
+            // btnLoad
             // 
-            this.button1.Location = new System.Drawing.Point(12, 356);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLoad.Location = new System.Drawing.Point(12, 356);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(75, 23);
+            this.btnLoad.TabIndex = 4;
+            this.btnLoad.Text = "Betöltés";
+            this.btnLoad.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnSort
             // 
-            this.button2.Location = new System.Drawing.Point(100, 356);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSort.Location = new System.Drawing.Point(100, 356);
+            this.btnSort.Name = "btnSort";
+            this.btnSort.Size = new System.Drawing.Size(75, 23);
+            this.btnSort.TabIndex = 5;
+            this.btnSort.Text = "Rendezés";
+            this.btnSort.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -102,12 +102,12 @@ namespace grafikusmegoldas
             this.label2.TabIndex = 6;
             this.label2.Text = "Taxi ID:";
             // 
-            // textBox2
+            // txtIndulas
             // 
-            this.textBox2.Location = new System.Drawing.Point(281, 142);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 2;
+            this.txtIndulas.Location = new System.Drawing.Point(281, 142);
+            this.txtIndulas.Name = "txtIndulas";
+            this.txtIndulas.Size = new System.Drawing.Size(100, 23);
+            this.txtIndulas.TabIndex = 2;
             // 
             // label3
             // 
@@ -127,12 +127,12 @@ namespace grafikusmegoldas
             this.label4.TabIndex = 6;
             this.label4.Text = "Távolság";
             // 
-            // textBox4
+            // txtTávolság
             // 
-            this.textBox4.Location = new System.Drawing.Point(281, 205);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 2;
+            this.txtTávolság.Location = new System.Drawing.Point(281, 205);
+            this.txtTávolság.Name = "txtTávolság";
+            this.txtTávolság.Size = new System.Drawing.Size(100, 23);
+            this.txtTávolság.TabIndex = 2;
             // 
             // label5
             // 
@@ -144,19 +144,19 @@ namespace grafikusmegoldas
             this.label5.TabIndex = 6;
             this.label5.Text = "Viteldíj";
             // 
-            // textBox5
+            // txtViteldíj
             // 
-            this.textBox5.Location = new System.Drawing.Point(281, 234);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 23);
-            this.textBox5.TabIndex = 2;
+            this.txtViteldíj.Location = new System.Drawing.Point(281, 234);
+            this.txtViteldíj.Name = "txtViteldíj";
+            this.txtViteldíj.Size = new System.Drawing.Size(100, 23);
+            this.txtViteldíj.TabIndex = 2;
             // 
-            // textBox6
+            // txtBorravaló
             // 
-            this.textBox6.Location = new System.Drawing.Point(281, 267);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 23);
-            this.textBox6.TabIndex = 2;
+            this.txtBorravaló.Location = new System.Drawing.Point(281, 267);
+            this.txtBorravaló.Name = "txtBorravaló";
+            this.txtBorravaló.Size = new System.Drawing.Size(100, 23);
+            this.txtBorravaló.TabIndex = 2;
             // 
             // label6
             // 
@@ -167,12 +167,12 @@ namespace grafikusmegoldas
             this.label6.TabIndex = 6;
             this.label6.Text = "Borravaló";
             // 
-            // textBox7
+            // txtFizetésmódja
             // 
-            this.textBox7.Location = new System.Drawing.Point(281, 296);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 23);
-            this.textBox7.TabIndex = 2;
+            this.txtFizetésmódja.Location = new System.Drawing.Point(281, 296);
+            this.txtFizetésmódja.Name = "txtFizetésmódja";
+            this.txtFizetésmódja.Size = new System.Drawing.Size(100, 23);
+            this.txtFizetésmódja.TabIndex = 2;
             // 
             // label7
             // 
@@ -184,12 +184,12 @@ namespace grafikusmegoldas
             this.label7.Text = "Fizetés módja";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // textBox3
+            // txtIdőtartam
             // 
-            this.textBox3.Location = new System.Drawing.Point(281, 171);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 2;
+            this.txtIdőtartam.Location = new System.Drawing.Point(281, 171);
+            this.txtIdőtartam.Name = "txtIdőtartam";
+            this.txtIdőtartam.Size = new System.Drawing.Size(100, 23);
+            this.txtIdőtartam.TabIndex = 2;
             // 
             // label8
             // 
@@ -212,16 +212,16 @@ namespace grafikusmegoldas
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSort);
+            this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtFizetésmódja);
+            this.Controls.Add(this.txtBorravaló);
+            this.Controls.Add(this.txtViteldíj);
+            this.Controls.Add(this.txtTávolság);
+            this.Controls.Add(this.txtIdőtartam);
+            this.Controls.Add(this.txtIndulas);
+            this.Controls.Add(this.txtTaxiID);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -234,22 +234,22 @@ namespace grafikusmegoldas
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTaxiID;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.Button btnSort;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtIndulas;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtTávolság;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtViteldíj;
+        private System.Windows.Forms.TextBox txtBorravaló;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtFizetésmódja;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtIdőtartam;
         private System.Windows.Forms.Label label8;
     }
 }
