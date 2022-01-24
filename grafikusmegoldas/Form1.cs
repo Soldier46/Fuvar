@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Fuvar;
 
 namespace grafikusmegoldas
 {
@@ -32,6 +33,11 @@ namespace grafikusmegoldas
         private void label7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

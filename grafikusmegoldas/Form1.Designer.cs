@@ -47,6 +47,7 @@ namespace grafikusmegoldas
             this.label7 = new System.Windows.Forms.Label();
             this.txtIdőtartam = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnKilépés = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -83,6 +84,7 @@ namespace grafikusmegoldas
             this.btnLoad.TabIndex = 4;
             this.btnLoad.Text = "Betöltés";
             this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnSort
             // 
@@ -200,11 +202,21 @@ namespace grafikusmegoldas
             this.label8.TabIndex = 6;
             this.label8.Text = "Időtartam";
             // 
+            // btnKilépés
+            // 
+            this.btnKilépés.Location = new System.Drawing.Point(407, 356);
+            this.btnKilépés.Name = "btnKilépés";
+            this.btnKilépés.Size = new System.Drawing.Size(75, 23);
+            this.btnKilépés.TabIndex = 7;
+            this.btnKilépés.Text = "Kilépés";
+            this.btnKilépés.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(500, 403);
+            this.Controls.Add(this.btnKilépés);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -251,6 +263,7 @@ namespace grafikusmegoldas
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtIdőtartam;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnKilépés;
     }
 }
 
