@@ -6,4 +6,14 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="fuvar.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

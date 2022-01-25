@@ -75,6 +75,7 @@ namespace grafikusmegoldas
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(163, 334);
             this.listBox1.TabIndex = 3;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // btnLoad
             // 
@@ -94,6 +95,7 @@ namespace grafikusmegoldas
             this.btnSort.TabIndex = 5;
             this.btnSort.Text = "Rendezés";
             this.btnSort.UseVisualStyleBackColor = true;
+            this.btnSort.Click += new System.EventHandler(this.btnSort_Click);
             // 
             // label2
             // 

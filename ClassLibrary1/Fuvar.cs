@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Fuvar
+namespace ClassLibrary1
 {
-    class Class1
+    public class Fuvar
     {
         public int TaxiId { get; set; }
         public DateTime indIdo { get; set; }
@@ -21,7 +17,7 @@ namespace Fuvar
         public string fizetesmodja { get; set; }
 
 
-        public Class1(string valami)
+        public Fuvar(string valami)
         {
             string[] s = valami.Split(';');
             TaxiId = int.Parse(s[0]);
@@ -32,6 +28,5 @@ namespace Fuvar
             borravalo = double.Parse(s[5]);
             fizetesmodja = s[6];
         }
-
     }
 }
